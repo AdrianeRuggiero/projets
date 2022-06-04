@@ -1,0 +1,58 @@
+body{
+    margin: 50px;
+    font-family: Raleway;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+
+}
+
+img{
+    max-width: 300px;
+    max-height: 150px;
+    border-radius: 15px 15px 0 0;
+    margin: 3px;
+}
+
+.logo{
+    width: 100px;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+form {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.filters{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.tabs{
+    background-color: #ffff;
+    width: fit-content;
+    border-radius: 15px;
+    margin: 10px;
+}
+
+.main {
+    background-color: #F2F2F2;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+}
