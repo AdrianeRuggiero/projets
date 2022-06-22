@@ -18,6 +18,7 @@ h1 h2{
 
 h3{
     color: black;
+    font-size: 16px;
 }
 
 p{
@@ -38,24 +39,40 @@ li {
 
 /* Header */
 
-header{
+.mudaNav{
     display: flex;
     flex-direction: row;
-    margin: 15px 30px;
     justify-content: space-between;
-    flex-wrap: wrap;
+    margin-left: 30px;
+    margin-right: 30px;
 }
 
+.menuNav{
+    width: 25%;
+}
 .menu{
     display: flex;
-    justify-content: space-between;
+    flex: row;
+    margin-right: 30px;
     list-style-type: none;  
 }
 
-.nav-link:hover{
-    border-top: solid 2px #0065FC;
-    color: #0065FC;
+.menuBar{
+  padding: 10%;
+  padding-top: 12px;
+  margin-top: 0;
 }
+
+.menuBar:hover {
+    border-top: 3px solid #0065fc;
+    cursor: pointer;
+}
+
+.menuBar:hover > a {
+    color: #0065fc;
+  }
+
+
 
 .logo{
     width: 80px;
@@ -71,8 +88,10 @@ header{
 
 .search-box {
     display: flex;
-    width: 400px;
+    width: 28%;
     height: 40px;
+    margin-top: 15px;
+    margin-bottom: 10px;
     border-radius: 20px;
 }
 
@@ -80,7 +99,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 600px;
+    width: 50%;
     background-color: #F2F2F2;
     border-radius: 10px 0 0 10px;
 }
@@ -88,7 +107,8 @@ header{
 .search{
     display: flex;
     background: none;
-    border:  solid 1px #F2F2F2;
+    border:  solid 2px #F2F2F2;
+    border-radius: 0 15px 15px 0;
 }
 
 .search-text{
@@ -181,7 +201,6 @@ label:hover{
 .main {
     background-color: #F2F2F2;
     border-radius: 15px;
-    width: 70%;
     margin-right: 20px;
     padding: 20px;
     display: flex;
@@ -228,7 +247,6 @@ label:hover{
 .bestPlaces{
     background-color: #F2F2F2;
     border-radius: 15px;
-    width: 30%;
     padding: 20px;
     display: flex;
     flex-flow: column;
@@ -266,7 +284,7 @@ label:hover{
 
 .imagesCases{
     width: 100%;
-    height: 100%;
+    height: 95%;
     border-radius: 15px 0 0 15px;
     margin: 3px;
 }
@@ -330,16 +348,20 @@ label:hover{
 
 .lugar1{
     width: 100%;
-    height: 60%;
+    height: 50%;
     border-radius: 15px;
     box-shadow: 3px 3px 3px 1px #F2F2F2;
 }
 
 .lugar2{
     width: 100%;
-    height:  30%;
+    height:  45%;
     border-radius: 15px;
     box-shadow: 3px 3px 3px 1px #F2F2F2;
+}
+
+.image-container{
+    height: 91%;
 }
 
 .image2-container{
@@ -376,7 +398,75 @@ footer{
 
 /* Media Queries */
 
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media (min-width: 768px) and (max-width: 992px) {
+    .filters{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #hebergements{
+        width: 85%;
+        height: auto;
+        flex-direction: column-reverse;
+    }
+
+    .title-bestPlaces{
+        width: 100%;
+    }
+
+    .bestPlaces{
+        width: 100%;
+        flex-flow: row wrap;
+    }
+
+    .cases{
+        width: 30%;
+        height: auto;
+    }
+
+    .textCases{
+        display: flex;
+        height: auto;
+        width: 60%;
+        margin: 0 10px;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .main{
+        width: 100%;
+        margin-top: 10px;
+    }
+
+}
+
+@media (max-width: 767px) {
+    .mudaNav{
+        width: 100%;
+        margin-left: 0;
+        flex-direction: column;
+    }
+
+    .logo{
+        margin-left: 150px;
+        width: 25%;
+    }
+
+    #description{
+        margin: 30px 15px;
+    }
+
+    p{
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .search-box{
+        margin-top: 30px;
+        width: 50%;
+        height: 50px;
+    }
+    
     #hebergements{
         flex-direction: column-reverse ;
         width: auto;
@@ -384,13 +474,13 @@ footer{
     }
 
     .main{
-        width: 100%;
         flex-flow: column;
         height: auto;
         background-color: #ffff;
     }
-}
 
-@media screen and (max-width: 767px) {
-    
+    .filters{
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }
