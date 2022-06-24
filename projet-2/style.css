@@ -99,7 +99,7 @@ li {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 50%;
+    width: 50px;
     background-color: #F2F2F2;
     border-radius: 10px 0 0 10px;
 }
@@ -113,6 +113,7 @@ li {
 
 .search-text{
     width: 250px;
+    color: black;
     border: none;
     outline: none;
     padding-left: 20px;
@@ -178,6 +179,16 @@ label:hover{
     margin-right: 20px;
 }
 
+.available{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.availability-text{
+    padding: 15px;
+}
+
 /* Hebergements */
 
 #hebergements{
@@ -210,6 +221,7 @@ label:hover{
 
 .title{
     width: 100%;
+    margin-bottom: 5px;
 }
 
 .tabs{
@@ -308,6 +320,7 @@ label:hover{
 .activities-main{
     width: 100%;
     height: 100%;
+    margin-top: 15px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -324,6 +337,12 @@ label:hover{
     height: 100%;
     border-radius: 15px;
     box-shadow: 3px 3px 3px 1px #F2F2F2;
+}
+
+.boxActivities2{
+    width: 23%;
+    height: 100%;
+    margin-bottom: 40px;
 }
 
 .activitiesSmall{
@@ -399,13 +418,17 @@ footer{
 /* Media Queries */
 
 @media (min-width: 768px) and (max-width: 992px) {
+.location-icon{
+    width: 50px;
+}
+
     .filters{
         flex-direction: column;
         align-items: flex-start;
     }
 
     #hebergements{
-        width: 85%;
+        width: 90%;
         height: auto;
         flex-direction: column-reverse;
     }
@@ -435,25 +458,43 @@ footer{
 
     .main{
         width: 100%;
+        height: 600px;
         margin-top: 10px;
     }
 
 }
 
 @media (max-width: 767px) {
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    .title{
+        margin-top: 15px;
+        margin-left: 5px;
+        font-size: 18px;
+    }
+
     .mudaNav{
         width: 100%;
         margin-left: 0;
         flex-direction: column;
+        align-items: center;
+    }
+
+    .menuNav{
+        width: 110%;
     }
 
     .logo{
-        margin-left: 150px;
-        width: 25%;
+        width: 105px;
+        height: auto;
     }
 
     #description{
-        margin: 30px 15px;
+        margin: 0 15px;
     }
 
     p{
@@ -463,24 +504,122 @@ footer{
 
     .search-box{
         margin-top: 30px;
+        margin-bottom: 30px;
         width: 50%;
         height: 50px;
+    }
+
+    .search-btn{
+        display: none;
+    }
+
+    .search-btn-mobile{
+        display: block;
+        width: 50px;
+        border-radius: 15px;
+        background-color: #0065fc;
+        border: none;
+    }
+
+    .search i {
+        position: relative;
+        top: 16px;
+        right: 35px;
+        color: white;
+        display: block;
+        cursor: pointer;
+    }
+
+    .filters{
+        flex-direction: column;
+        align-items: flex-start;
     }
     
     #hebergements{
         flex-direction: column-reverse ;
         width: auto;
         height: auto;
+        margin-left: 0;
+        margin-right: 0;
     }
 
     .main{
-        flex-flow: column;
-        height: auto;
+        flex-direction: column;
+        margin-top: 20px;
+        padding: 5px;
         background-color: #ffff;
     }
 
-    .filters{
+    .tabs{
+        width: 97%;
+        height: 200px;
+    }
+
+    .cases{
+        height: 180px;
+    }
+
+    .textsTabs p{
+        margin-top: 2px;
+        margin-bottom: 2px;
+    }
+
+    .textsTabs h3{
+        font-size: 18px;
+    }
+
+    #activities{
+        height: auto;
+        margin: 0;
+    }
+
+    .activities-main{
         flex-direction: column;
-        align-items: flex-start;
+        margin-left: 18px;
+    }
+
+    .boxActivities{
+        width: 90%;
+        height: 200px;
+    }
+
+    .boxActivities2{
+        width: 90%;
+        height: 400px;
+    }
+
+    .image-container{
+        height: 75%;
+    }
+
+    .image2-container{
+        height: 75%;
+    }
+
+    .textBoxActivities{
+        margin-top: 15px;
+    }
+
+    .textBoxActivities h3 {
+        font-size: 20px;
+    }
+
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        margin:0;
+    }
+
+    .footer{
+        margin: 30px 0 0 30px;
+    }
+
+    .footer-title{
+        width: 300px;
+    }
+
+    .footer a{
+        width: 300px;
     }
 }
