@@ -466,6 +466,7 @@ footer{
 
 @media (max-width: 767px) {
     body{
+        width: 105%;
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
@@ -553,6 +554,10 @@ footer{
     .tabs{
         width: 97%;
         height: 200px;
+    }
+
+    .bestPlaces{
+        border-radius: 0;
     }
 
     .cases{
