@@ -548,9 +548,6 @@ footer{
     }
 
     .search i {
-        position: relative;
-        top: 16px;
-        right: 35px;
         color: white;
         display: block;
         cursor: pointer;
