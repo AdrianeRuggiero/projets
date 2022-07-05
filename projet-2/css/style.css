@@ -191,7 +191,6 @@ label:hover{
     margin: 30px;
     display: flex;
     height: 650px;
-    flex: row;
     justify-content: space-between;
 }
 
