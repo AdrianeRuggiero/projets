@@ -6,7 +6,7 @@
         <title>Oh My Food</title>
 
         <!-- CSS -->
-        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="sass/styles.css">
 
         <!-- FontAwesome-->
         <script src="https://kit.fontawesome.com/b78c31ee1e.js" crossorigin="anonymous"></script>
@@ -14,20 +14,20 @@
     <body>
         <header>
             <div class="logo">
-                <img src="/projet-3/images/logo/ohmyfood.png" alt="" class="img-logo">
+                <img src="images/logo/ohmyfood.png" alt="logo" class="logo__img">
             </div>
             <div>
                 <form action="" method="post" class="location">
-                    <div class="location-icon">
+                    <div class="location__icon">
                         <i class="fa-solid fa-location-dot"></i>
                     </div>
-                    <div class="location-search">
+                    <div class="location__search">
                         <input type="search" placeholder="Paris,Belleville" class="search-text">
                     </div>
                 </form>
             </div>
             <div class="introduction">
-                <div class="introduction-text">
+                <div class="introduction__text">
                     <h2>Réservez le menu qui vous convient</h2>
                     <p>Découvrez des restaurants d'exception, séléctionnés par nos soins</p>
                     <button>Explorer nos restaurants</button>
@@ -35,13 +35,20 @@
             </div>
         </header>
         <section id="fonctionnement">
-
+            <div class="fonctionnement__title">
+                <h2>Fonctionnement</h2>
+            </div>
+            <div class="fonctionnement__btn">
+                <button>Choisissez un restaurant</button>
+                <button>Composez votre menu</button>
+                <button>Dégustez au restaurant</button>
+            </div>
         </section>
         <section id="restaurants">
            <div class="restaurants-title">
                <h2>Restaurants</h2>
            </div>
-            <div class="restaurants-box">
+           <div class="restaurants-box">
                 <a href="">
                     <div class="restaurant-image">
 

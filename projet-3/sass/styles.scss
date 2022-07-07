@@ -1,9 +1,9 @@
 *{
-    margin: 0;
+    margin: auto;
     padding: 0;
 }
 
-@media all and (max-device-width:480px) {
+@media all and (max-device-width:767px) {
 
     .logo{
         width: 100%;
@@ -12,11 +12,11 @@
         justify-content: center;
         align-items: center;
         background-color: #FFFF;
+        &__img{
+            height: 40px;
+        }
     }
 
-    .img-logo{
-        height: 40px;
-    }
 
     .location{
         display: flex;
@@ -26,11 +26,12 @@
         justify-content: center;
         align-items: center;
         background-color: lightgray;
+        &__icon{
+            margin-right: 3%;
+        }
     }
 
-    .location-icon{
-        margin-right: 3%;
-    }
+
 
     .search-text{
         border: none;
@@ -39,11 +40,11 @@
 
     .introduction{
         background-color: snow;
-    }
-
-    .introduction-text{
-        display: flex;
+        &__text{
+            display: flex;
         flex-direction: column;
         align-content: center;
+        }
     }
+
 }
