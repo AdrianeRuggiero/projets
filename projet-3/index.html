@@ -6,10 +6,16 @@
         <title>Oh My Food</title>
 
         <!-- CSS -->
-        <link rel="stylesheet" href="sass/styles.css">
+        <link rel="stylesheet" href="../projet-3/sass/styles.css">
 
         <!-- FontAwesome-->
         <script src="https://kit.fontawesome.com/b78c31ee1e.js" crossorigin="anonymous"></script>
+
+        <!--Google Font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Shrikhand&display=swap" rel="stylesheet">
+
     </head>
     <body>
         <header>
@@ -28,26 +34,26 @@
             </div>
             <div class="introduction">
                 <div class="introduction__text">
-                    <h2>Réservez le menu qui vous convient</h2>
-                    <p>Découvrez des restaurants d'exception, séléctionnés par nos soins</p>
-                    <button>Explorer nos restaurants</button>
+                    <h2 class="subtitle">Réservez le menu qui vous convient</h2>
+                    <p class="text">Découvrez des restaurants d'exception, séléctionnés par nos soins</p>
+                    <button class="btn text">Explorer nos restaurants</button>
                 </div>
             </div>
         </header>
         <main>
             <section id="fonctionnement">
                 <div class="fonctionnement__title">
-                    <h2>Fonctionnement</h2>
+                    <h2 class="subtitle">Fonctionnement</h2>
                 </div>
                 <div class="fonctionnement__btn">
-                    <button>Choisissez un restaurant</button>
-                    <button>Composez votre menu</button>
-                    <button>Dégustez au restaurant</button>
+                    <button class="btn text">Choisissez un restaurant</button>
+                    <button class="btn text">Composez votre menu</button>
+                    <button class="btn text">Dégustez au restaurant</button>
                 </div>
             </section>
             <section id="restaurants">
                <div class="restaurants-title">
-                   <h2>Restaurants</h2>
+                   <h2 class="subtitle">Restaurants</h2>
                </div>
                <div class="restaurants-box">
                     <a href="/projets/projet-3/menu1.html">
@@ -56,8 +62,8 @@
                         </div>
                         <div class="restaurant-description">
                             <div class="restaurant-text">
-                                <h3>La palette du goût</h3>
-                                <p>Ménilmontant</p>
+                                <h3 class="subtitle">La palette du goût</h3>
+                                <p class="text">Ménilmontant</p>
                             </div>
                             <div class="restaurant-icon">
                                 <i class="fa-regular fa-heart"></i>
@@ -72,8 +78,8 @@
                         </div>
                         <div class="restaurant-description">
                             <div class="restaurant-text">
-                                <h3>La note enchantée</h3>
-                                <p>Charonne</p>
+                                <h3 class="subtitle">La note enchantée</h3>
+                                <p class="text">Charonne</p>
                             </div>
                             <div class="restaurant-icon">
                                 <i class="fa-regular fa-heart"></i>
@@ -88,8 +94,8 @@
                         </div>
                         <div class="restaurant-description">
                             <div class="restaurant-text">
-                                <h3>À la française</h3>
-                                <p>Cité Rouge</p>
+                                <h3 class="subtitle">À la française</h3>
+                                <p class="text">Cité Rouge</p>
                             </div>
                             <div class="restaurant-icon">
                                 <i class="fa-regular fa-heart"></i>
@@ -104,8 +110,8 @@
                         </div>
                         <div class="restaurant-description">
                             <div class="restaurant-text">
-                                <h3>Le délice des sens</h3>
-                                <p>Folie-Méricourt</p>
+                                <h3 class="subtitle">Le délice des sens</h3>
+                                <p class="text">Folie-Méricourt</p>
                             </div>
                             <div class="restaurant-icon">
                                 <i class="fa-regular fa-heart"></i>
@@ -117,10 +123,11 @@
         </main>
         <footer>
             <img src="/projet-3/images/logo/ohmyfood@2x.svg" alt="">
-            <a href="">Proposer un restaurant</a>
-            <a href="">Devenir partenaire</a>
-            <a href="">Mentions légales</a>
-            <a href="mailto:">Contact</a>
+            <a href="" class="text">
+                <i class="fa-solid fa-utensils"></i>Proposer un restaurant</a>
+            <a href="" class="text">Devenir partenaire</a>
+            <a href="" class="text">Mentions légales</a>
+            <a href="mailto:" class="text">Contact</a>
         </footer>
     </body>
 </html>

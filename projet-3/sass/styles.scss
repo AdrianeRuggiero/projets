@@ -1,3 +1,13 @@
+$color-primary:#9356DC;
+$color-secondary: #FF79DA;
+$color-terciary: #99E2D0;
+$color-base: #ffff;
+$color-gray: lightgray;
+
+$font-subtitle: Shrikhand;
+$font-text: Roboto;
+
+
 *{
     margin: auto;
     padding: 0;
@@ -27,7 +37,10 @@
         align-items: center;
         background-color: lightgray;
         &__icon{
-            margin-right: 3%;
+            margin: 0 3px 0 0;
+        }
+        &__search{
+            margin: 0 0 0 1px;
         }
     }
 
@@ -45,6 +58,59 @@
         flex-direction: column;
         align-content: center;
         }
+    }
+
+    .subtitle{
+        font-family: $font-text;
+    }
+
+    .text{
+        font-family: $font-text;
+    }
+
+    .fonctionnement{
+        display: flex;
+        flex-direction: column;
+        &__btn{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    .btn{
+        width: 90%;
+        height: 80px;
+        border-radius: 25px;
+    }
+
+    #restaurants{
+        background-color: $color-gray;
+    }
+
+    .restaurants-box{
+        width: 90%;
+        border-radius: 25px;
+        background-color: $color-base;
+        & >a{
+            width: 90%;
+        }
+    }
+
+    .restaurant-image{
+        & >img{
+            border-radius: 25px;
+            width: 100%;
+            height: 200px;
+        }
+    }
+
+    .restaurant-description{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .restaurant-text{
+        width: 90%;
     }
 
 }
