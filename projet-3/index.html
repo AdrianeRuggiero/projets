@@ -14,7 +14,7 @@
         <!--Google Font-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Shrikhand&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;900&family=Shrikhand&display=swap" rel="stylesheet">
 
     </head>
     <body>
@@ -32,23 +32,38 @@
                     </div>
                 </form>
             </div>
-            <div class="introduction">
+        </header>
+        <main>
+            <section class="introduction">
                 <div class="introduction__text">
                     <h2 class="subtitle">Réservez le menu qui vous convient</h2>
                     <p class="text">Découvrez des restaurants d'exception, séléctionnés par nos soins</p>
-                    <button class="btn text">Explorer nos restaurants</button>
+                    <button class="btn text">
+                        <h3 class="subtitle">Explorer nos restaurants</h3>
+                    </button>
                 </div>
-            </div>
-        </header>
-        <main>
-            <section id="fonctionnement">
+            </section>
+            <section class="fonctionnement">
                 <div class="fonctionnement__title">
                     <h2 class="subtitle">Fonctionnement</h2>
                 </div>
                 <div class="fonctionnement__btn">
-                    <button class="btn text">Choisissez un restaurant</button>
-                    <button class="btn text">Composez votre menu</button>
-                    <button class="btn text">Dégustez au restaurant</button>
+                    <button class="btn text subtitle">
+                        <i class="fa-solid fa-mobile-screen"></i>
+                        <h3 class="subtitle">Choisissez un restaurant</h3>
+                    </button>
+                </div>
+                <div class="fonctionnement__btn">
+                    <button class="btn text subtitle">
+                        <i class="fa-solid fa-list-ul"></i>
+                        <h3 class="subtitle">Composez votre menu</h3>
+                    </button>
+                </div>
+                <div class="fonctionnement__btn">
+                    <button class="btn text subtitle">
+                        <i class="fa-solid fa-store"></i>
+                        <h3 class="subtitle">Dégustez au restaurant</h3>
+                    </button>
                 </div>
             </section>
             <section id="restaurants">
@@ -121,8 +136,8 @@
                 </div>
             </section>
         </main>
-        <footer>
-            <img src="/projet-3/images/logo/ohmyfood@2x.svg" alt="">
+        <footer class="footer">
+            <img src="../projet-3/images/logo/ohmyfood@2x.svg" alt="">
             <a href="" class="text">
                 <i class="fa-solid fa-utensils"></i>Proposer un restaurant</a>
             <a href="" class="text">Devenir partenaire</a>
