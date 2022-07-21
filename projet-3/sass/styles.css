@@ -57,13 +57,6 @@ a {
   .introduction {
     background-color: #efe9e9;
     height: 220px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
   }
   .introduction__text {
     display: -webkit-box;
@@ -76,11 +69,24 @@ a {
     -ms-flex-line-pack: center;
         align-content: center;
   }
+  .btn-colored {
+    background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+    background: linear-gradient(#FF79DA, #9356DC);
+    color: #ffff;
+  }
   .subtitle {
     font-family: Roboto;
   }
+  .subtitle-first {
+    width: 60%;
+    text-align: center;
+  }
   .text {
     font-family: Roboto;
+  }
+  .text-first {
+    width: 80%;
+    text-align: center;
   }
   .fonctionnement {
     height: 350px;
@@ -120,6 +126,13 @@ a {
         -ms-flex-direction: row;
             flex-direction: row;
   }
+  .btn-icon {
+    margin-left: 18%;
+    margin-right: 25px;
+  }
+  .btn-title {
+    margin-left: 0;
+  }
   #restaurants {
     background-color: #efe9e9;
     height: 1050px;
@@ -155,7 +168,7 @@ a {
             flex-direction: row;
   }
   .restaurant-text {
-    width: 90%;
+    width: 80%;
   }
   .footer {
     height: 300px;
@@ -167,6 +180,47 @@ a {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .footer__links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 10px;
+  }
+  .footer > img {
+    width: 30%;
+    margin: 10px;
+  }
+  .text-footer {
+    font-family: Roboto;
+    margin-left: 0;
+    margin-bottom: 10px;
+    color: #ffff;
+  }
+  .logo__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .return-icon {
+    margin-left: 20px;
+  }
+  .img-container {
+    margin-left: 0;
+  }
+  .restaurant__img {
+    width: 100%;
+  }
+  .restaurant__img > img {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=styles.css.map */

@@ -56,8 +56,6 @@ a{
     .introduction{
         background-color: $color-gray;
         height: 220px;
-        display: flex;
-        flex-direction: column;
         
         &__text{
             display: flex;
@@ -66,12 +64,25 @@ a{
         }
     }
 
+    .btn-colored{
+        background: linear-gradient($color-secondary,$color-primary);
+        color: $color-base;
+    }
+
     .subtitle{
         font-family: $font-subtitle;
+        &-first{
+            width: 60%;
+            text-align: center;
+        }
     }
 
     .text{
         font-family: $font-text;
+        &-first{
+            width: 80%;
+            text-align: center;
+        }
     }
 
     .fonctionnement{
@@ -96,6 +107,15 @@ a{
         box-shadow: 3px 3px 3px 1px lightgray;
         display: flex;
         flex-direction: row;
+    }
+
+    .btn-icon{
+        margin-left: 18%;
+        margin-right: 25px;
+    }
+
+    .btn-title{
+        margin-left: 0;
     }
 
     #restaurants{
@@ -129,7 +149,7 @@ a{
     }
 
     .restaurant-text{
-        width: 90%;
+        width: 80%;
     }
 
     .footer{
@@ -137,6 +157,42 @@ a{
         background-color: gray;
         display: flex;
         flex-direction: column;
+        &__links{
+            display: flex;
+            flex-direction: column;
+            margin: 10px;
+        }
+        & >img{
+            width: 30%;
+            margin: 10px;
+        }
+    }
+
+    .text-footer{
+        font-family: $font-text;
+        margin-left: 0;
+        margin-bottom: 10px;
+        color: $color-base;
+    }
+
+    .logo__container{
+        display: flex;
+        flex-direction: row;
+        }
+    
+    .return-icon{
+        margin-left: 20px;
+    }
+
+    .img-container{
+        margin-left: 0;
+    }
+    
+    .restaurant__img{
+        width: 100%;
+        & > img{
+            width: 100%;
+        }
     }
 
 }

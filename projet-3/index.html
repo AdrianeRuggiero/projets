@@ -36,11 +36,11 @@
         <main>
             <section class="introduction">
                 <div class="introduction__text">
-                    <h2 class="subtitle">Réservez le menu qui vous convient</h2>
-                    <p class="text">Découvrez des restaurants d'exception, séléctionnés par nos soins</p>
-                    <button class="btn text">
-                        <h3 class="subtitle">Explorer nos restaurants</h3>
-                    </button>
+                        <h2 class="subtitle subtitle-first">Réservez le menu qui vous convient</h2>
+                        <p class="text text-first">Découvrez des restaurants d'exception, séléctionnés par nos soins</p>
+                        <button class="btn  btn-colored text">
+                            <h3 class="subtitle">Explorer nos restaurants</h3>
+                        </button>
                 </div>
             </section>
             <section class="fonctionnement">
@@ -49,20 +49,32 @@
                 </div>
                 <div class="fonctionnement__btn">
                     <button class="btn text subtitle">
-                        <i class="fa-solid fa-mobile-screen"></i>
-                        <h3 class="subtitle">Choisissez un restaurant</h3>
+                        <div class="btn-icon">
+                            <i class="fa-solid fa-mobile-screen"></i>
+                        </div>
+                        <div class="btn-title">
+                            <h3 class="subtitle">Choisissez un restaurant</h3>
+                        </div>
                     </button>
                 </div>
                 <div class="fonctionnement__btn">
                     <button class="btn text subtitle">
-                        <i class="fa-solid fa-list-ul"></i>
-                        <h3 class="subtitle">Composez votre menu</h3>
+                        <div class="btn-icon">
+                            <i class="fa-solid fa-list-ul"></i>
+                        </div>
+                        <div class="btn-title">
+                            <h3 class="subtitle">Composez votre menu</h3>
+                        </div>
                     </button>
                 </div>
                 <div class="fonctionnement__btn">
                     <button class="btn text subtitle">
-                        <i class="fa-solid fa-store"></i>
-                        <h3 class="subtitle">Dégustez au restaurant</h3>
+                        <div class="btn-icon">
+                            <i class="fa-solid fa-store"></i>
+                        </div>
+                        <div class="btn-title">
+                            <h3 class="subtitle">Dégustez au restaurant</h3>
+                        </div>
                     </button>
                 </div>
             </section>
@@ -81,7 +93,7 @@
                                 <p class="text">Ménilmontant</p>
                             </div>
                             <div class="restaurant-icon">
-                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-regular fa-heart fa-xl"></i>
                             </div>
                         </div>
                     </a>
@@ -97,7 +109,7 @@
                                 <p class="text">Charonne</p>
                             </div>
                             <div class="restaurant-icon">
-                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-regular fa-heart fa-xl"></i>
                             </div>
                         </div>
                     </a>
@@ -113,7 +125,7 @@
                                 <p class="text">Cité Rouge</p>
                             </div>
                             <div class="restaurant-icon">
-                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-regular fa-heart fa-xl"></i>
                             </div>
                         </div>
                     </a>
@@ -129,7 +141,7 @@
                                 <p class="text">Folie-Méricourt</p>
                             </div>
                             <div class="restaurant-icon">
-                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-regular fa-heart fa-xl"></i>
                             </div>
                         </div>
                     </a>
@@ -138,11 +150,23 @@
         </main>
         <footer class="footer">
             <img src="../projet-3/images/logo/ohmyfood@2x.svg" alt="">
-            <a href="" class="text">
-                <i class="fa-solid fa-utensils"></i>Proposer un restaurant</a>
-            <a href="" class="text">Devenir partenaire</a>
-            <a href="" class="text">Mentions légales</a>
-            <a href="mailto:" class="text">Contact</a>
+            <div class="footer__links">
+                <div class="text-footer">
+                    <a href="" class="text-footer">
+                        <i class="fa-solid fa-utensils"></i>Proposer un restaurant</a>
+                </div>
+                <div class="text-footer">
+                    <a href="" class="text-footer">
+                        <i class="fa-solid fa-handshake-simple"></i>Devenir partenaire
+                    </a>
+                </div>
+                <div class="text-footer">
+                    <a href="" class="text-footer">Mentions légales</a>
+                </div>
+                <div class="text-footer">
+                    <a href="mailto:" class="text-footer">Contact</a>
+                </div>
+            </div>
         </footer>
     </body>
 </html>

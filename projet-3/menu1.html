@@ -5,11 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+     <!-- CSS -->
+     <link rel="stylesheet" href="../projet-3/sass/styles.css">
+
+     <!-- FontAwesome-->
+     <script src="https://kit.fontawesome.com/b78c31ee1e.js" crossorigin="anonymous"></script>
+
+     <!--Google Font-->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;900&family=Shrikhand&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <div class="logo__container">
-            <img src="/projets/projet-3/images/logo/ohmyfood.png" alt="img-logo">
+            <div class="return-icon">
+                <a href="../projet-3/index.html">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </a>
+            </div>
+            <div class="img-container">
+                <img src="../projet-3/images/logo/ohmyfood.png" alt="img-logo" class="logo__img">
+            </div>
         </div>
     </header>
     <main>
@@ -106,12 +124,25 @@
             </div>
         </div>
     </main>
-    <footer>
-        <img src="/projet-3/images/logo/ohmyfood@2x.svg" alt="">
-        <a href="">Proposer un restaurant</a>
-        <a href="">Devenir partenaire</a>
-        <a href="">Mentions légales</a>
-        <a href="mailto:">Contact</a>
+    <footer class="footer">
+        <img src="../projet-3/images/logo/ohmyfood@2x.svg" alt="">
+        <div class="footer__links">
+            <div class="text-footer">
+                <a href="">
+                    <i class="fa-solid fa-utensils"></i>Proposer un restaurant</a>
+            </div>
+            <div class="text-footer">
+                <a href="" class="text">
+                    <i class="fa-solid fa-handshake-simple"></i>Devenir partenaire
+                </a>
+            </div>
+            <div class="text-footer">
+                <a href="" class="text">Mentions légales</a>
+            </div>
+            <div class="text-footer">
+                <a href="mailto:" class="text-footer">Contact</a>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
