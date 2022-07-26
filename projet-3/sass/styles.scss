@@ -58,6 +58,7 @@ a{
         height: 220px;
         
         &__text{
+            height: 100%;
             display: flex;
             flex-direction: column;
             align-content: center;
@@ -65,6 +66,11 @@ a{
     }
 
     .btn-colored{
+        width: 60%;
+        height: 80px;
+        border-radius: 50px;
+        border: none;
+        box-shadow: 3px 3px 3px 1px lightgray;
         background: linear-gradient($color-secondary,$color-primary);
         color: $color-base;
     }
@@ -162,11 +168,17 @@ a{
             flex-direction: column;
             margin: 10px;
         }
-        & >img{
-            width: 30%;
-            margin: 10px;
+        &-logo{
+            margin: 0;
+            & >object{
+                fill: white;
+                width: 30%;
+                margin: 10px;
+            }
         }
     }
+
+    
 
     .text-footer{
         font-family: $font-text;
@@ -190,9 +202,88 @@ a{
     
     .restaurant__img{
         width: 100%;
+        position: absolute;
         & > img{
             width: 100%;
         }
+    }
+
+    .menu__container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        border-radius: 25px 25px 0 0;
+        background-color: $color-gray;
+        position: relative;
+        top: 200px;
+    }
+
+    .menu__title{
+        width: 95%;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row;
+        & >h2 {
+            width: 95%;
+            font-family: Shrikhand;
+        }
+    }
+
+    .menu__options{
+        width: 95%;
+        margin-top: 20px;
+        &--entrees{
+            height: 350px;
+            display: flex;
+            flex-direction: column;
+        }
+        &--plats{
+            height: 350px;
+            display: flex;
+            flex-direction: column;
+        }
+        &--desserts{
+            height: 350px;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    .menu__paragraph{
+        width: 100%;
+        padding-bottom: 5px;
+        & >p {
+            font-size: 18px;
+            font-family: $font-text;
+        }
+    }
+
+    .container__menu{
+        width: 100%;
+        height: 80px;
+        border-radius: 25px;
+        background-color: $color-base;
+        & >h4{
+            width: 95%;
+        }
+    }
+
+    .description__prix{
+        display: flex;
+        flex-direction: row;
+        & >p {
+            width: 85%;
+        }
+    }
+
+    .commander__btn{
+        width: 100%;
+        display: flex;
+    }
+
+    .footer-menu{
+        position: relative;
+        top: 260px;
     }
 
 }
