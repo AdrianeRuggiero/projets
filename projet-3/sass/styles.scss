@@ -159,7 +159,7 @@ a{
     }
 
     .footer{
-        height: 300px;
+        height: 200px;
         background-color: gray;
         display: flex;
         flex-direction: column;
@@ -187,6 +187,10 @@ a{
         color: $color-base;
     }
 
+    .menu__main{
+        height: 1600px;
+    }
+
     .logo__container{
         display: flex;
         flex-direction: row;
@@ -210,6 +214,7 @@ a{
 
     .menu__container{
         width: 100%;
+        height: 1400px;
         display: flex;
         flex-direction: column;
         border-radius: 25px 25px 0 0;
@@ -221,6 +226,7 @@ a{
     .menu__title{
         width: 95%;
         margin-top: 20px;
+        margin-bottom: 20px;
         display: flex;
         flex-direction: row;
         & >h2 {
@@ -231,7 +237,8 @@ a{
 
     .menu__options{
         width: 95%;
-        margin-top: 20px;
+        margin-top: 10px;
+        margin-bottom: 5px;
         &--entrees{
             height: 350px;
             display: flex;
@@ -255,6 +262,7 @@ a{
         & >p {
             font-size: 18px;
             font-family: $font-text;
+            border-bottom: 3px solid $color-terciary;
         }
     }
 
@@ -278,12 +286,79 @@ a{
 
     .commander__btn{
         width: 100%;
+        height: 90px;
+        margin-top: 60px;
         display: flex;
     }
 
-    .footer-menu{
-        position: relative;
-        top: 260px;
-    }
-
 }
+
+.loader {
+    background: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    animation: apparition 0.2s 3s ease-in-out forwards;
+  }
+  
+
+/* animation*/
+.step {
+    &1{
+      animation: fadein 2s; 
+      animation-fill-mode: both;
+    }
+    &2{
+      animation: fadein 2s;
+      animation-delay: 1.5s; 
+      animation-fill-mode: both;
+    }
+    &3{
+      animation: fadein 2s;
+      animation-delay: 3s; 
+      animation-fill-mode: both;
+    }
+}
+
+@keyframes fadein {
+    0% {
+      opacity: 0;
+      transform: translateY(10%);
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  // loading
+.loader {
+    @keyframes apparition {
+      from {
+        opacity: 100%;
+      }
+      to {
+        opacity: 0%;
+        visibility: hidden;
+      }
+    }
+    &_spinner {
+      @keyframes rotation {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+      @keyframes rotationBack {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(-360deg);
+        }
+      }
+    }
+  }
