@@ -1,0 +1,33 @@
+.btn-colored{
+    display: flex;
+    width: 200px;
+    height: 80px;
+    border-radius: 50px;
+    border: none;
+    box-shadow: 3px 3px 3px 1px lightgray;
+    background: linear-gradient($color-secondary,$color-primary);
+    color: $color-base;
+}
+
+.btn{
+    width: 350px;
+    height: 80px;
+    border-radius: 25px;
+    border: none;
+    box-shadow: 3px 3px 3px 1px lightgray;
+    display: flex;
+    flex-direction: row;
+    &:hover{
+        box-shadow: 2px 3px 10px rgb(0 0 0 / 35%);
+        transform: scale(1.03);
+      }
+}
+
+.btn-icon{
+    margin-left: 18%;
+    margin-right: 25px;
+}
+
+.btn-title{
+    margin-left: 0;
+}

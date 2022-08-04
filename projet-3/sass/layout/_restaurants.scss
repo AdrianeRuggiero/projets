@@ -1,0 +1,31 @@
+.restaurants{
+    background-color: $color-gray;
+    height: 1050px;
+    display: flex;
+    flex-direction: column;
+    &__title{
+        width: 90%;
+    }
+    &__box{
+        width: 90%;
+        height: 22%;
+        border-radius: 25px;
+        background-color: $color-base;
+        &-image{
+                & >img{
+                    border-radius: 25px 25px 0 0;
+                    width: 100%;
+                    height: 170px;
+                }
+        }
+        &-description{
+            display: flex;
+            flex-direction: row;
+        }
+        
+    }
+}
+
+.restaurant-text{
+    width: 80%;
+}

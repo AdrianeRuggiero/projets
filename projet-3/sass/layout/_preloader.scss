@@ -1,0 +1,41 @@
+@import "../utils/variables";
+
+.preloader {
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color: $color-base;
+    animation: apparition 0.2s 3s ease-in-out forwards;
+    &__inner{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    &__balls > div {
+        display: inline-block;
+        background-color: $color-gray;
+        width: 25px;
+        height: 25px;
+        animation: loadingballs linear infinite both;
+        border-radius: 100%;
+        margin: 3px;
+    }
+}
+.preloader__balls > div:nth-child(1) {
+    background-color: $color-terciary;
+    animation-duration:0.75s ;
+    animation-delay: 0;
+}
+.preloader__balls > div:nth-child(2) {
+    background-color: $color-secondary;
+    animation-duration: 0.75s ;
+    animation-delay: 0.12s;
+}
+.preloader__balls > div:nth-child(3) {
+    background-color: $color-primary;
+    animation-duration: 0.75s  ;
+    animation-delay: 0.24s;
+}

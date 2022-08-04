@@ -1,0 +1,11 @@
+.introduction{
+    background-color: $color-gray;
+    height: 220px;
+    
+    &__text{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+}

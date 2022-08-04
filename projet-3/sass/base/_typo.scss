@@ -1,0 +1,16 @@
+@import "../utils/variables";
+
+.subtitle{
+    font-family: $font-subtitle;
+    &-first{
+        text-align: center;
+    }
+}
+
+.text{
+    font-family: $font-text;
+    &-first{
+        width: 80%;
+        text-align: center;
+    }
+}

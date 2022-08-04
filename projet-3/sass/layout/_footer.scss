@@ -1,0 +1,21 @@
+.footer{
+    height: 200px;
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+    &__links{
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+    }
+    &-logo{
+        margin: 0;
+    }
+}
+
+.text-footer{
+    font-family: $font-text;
+    margin-left: 0;
+    margin-bottom: 10px;
+    color: $color-base;
+}
