@@ -108,6 +108,11 @@ a {
   box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.35);
   transform: scale(1.03);
 }
+@media screen and (min-width: 992px) {
+  .btn {
+    width: 250px;
+  }
+}
 
 .btn-icon {
   margin-left: 18%;
@@ -149,8 +154,6 @@ a {
   background-color: #99E2D0;
   -webkit-animation-duration: 0.75s;
           animation-duration: 0.75s;
-  -webkit-animation-delay: 0;
-          animation-delay: 0;
 }
 
 .preloader__balls > div:nth-child(2) {
@@ -233,10 +236,24 @@ a {
 .fonctionnement__title {
   width: 90%;
 }
+@media screen and (min-width: 992px) {
+  .fonctionnement__title {
+    margin-left: 10px;
+    width: 30%;
+  }
+}
 .fonctionnement__btn {
   width: 100%;
   display: flex;
   flex-direction: column;
+}
+@media screen and (min-width: 992px) {
+  .fonctionnement {
+    height: 200px;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+  }
 }
 
 .restaurants {
@@ -249,7 +266,7 @@ a {
   width: 90%;
 }
 .restaurants__box {
-  width: 90%;
+  width: 80%;
   height: 22%;
   border-radius: 25px;
   background-color: white;
@@ -262,6 +279,11 @@ a {
 .restaurants__box-description {
   display: flex;
   flex-direction: row;
+}
+@media screen and (min-width: 992px) {
+  .restaurants__box {
+    width: 30%;
+  }
 }
 
 .restaurant-text {
@@ -301,6 +323,12 @@ a {
 .menu__title > h2 {
   width: 95%;
   font-family: Shrikhand;
+  font-size: 24px;
+}
+@media screen and (min-width: 992px) {
+  .menu__title > h2 {
+    font-size: 36px;
+  }
 }
 
 .menu__options {
@@ -344,12 +372,26 @@ a {
   width: 95%;
 }
 
+.description__title {
+  margin: 10px;
+}
+
 .description__prix {
   display: flex;
   flex-direction: row;
+  margin: 10px;
 }
-.description__prix > p {
-  width: 85%;
+
+.description {
+  margin-left: 0;
+}
+
+.prix {
+  margin-right: 0;
+}
+
+.menu_check > i {
+  visibility: hidden;
 }
 
 .footer {
@@ -363,8 +405,18 @@ a {
   flex-direction: column;
   margin: 10px;
 }
+@media screen and (min-width: 768px) {
+  .footer__links {
+    flex-direction: row;
+  }
+}
 .footer-logo {
   margin: 0;
+}
+@media screen and (min-width: 768px) {
+  .footer {
+    height: 100px;
+  }
 }
 
 .text-footer {

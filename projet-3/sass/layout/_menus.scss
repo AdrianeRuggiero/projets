@@ -30,6 +30,10 @@
     & >h2 {
         width: 95%;
         font-family: Shrikhand;
+        font-size: 24px;
+        @media screen and (min-width: 992px) {
+            font-size: 36px;
+        }
     }
 }
 
@@ -74,10 +78,26 @@
     }
 }
 
+.description__title{
+    margin: 10px;
+}
+
 .description__prix{
     display: flex;
     flex-direction: row;
-    & >p {
-        width: 85%;
+    margin: 10px;
+}
+
+.description{
+    margin-left: 0;
+}
+
+.prix{
+    margin-right: 0;
+}
+
+.menu_check{
+    & > i {
+        visibility: hidden;
     }
 }

@@ -26,16 +26,15 @@
 }
 .preloader__balls > div:nth-child(1) {
     background-color: $color-terciary;
-    animation-duration:0.75s ;
-    animation-delay: 0;
+    animation-duration:0.75s;
 }
 .preloader__balls > div:nth-child(2) {
     background-color: $color-secondary;
-    animation-duration: 0.75s ;
+    animation-duration: 0.75s;
     animation-delay: 0.12s;
 }
 .preloader__balls > div:nth-child(3) {
     background-color: $color-primary;
-    animation-duration: 0.75s  ;
+    animation-duration: 0.75s;
     animation-delay: 0.24s;
 }
