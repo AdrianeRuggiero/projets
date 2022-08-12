@@ -45,23 +45,35 @@
         height: 350px;
         display: flex;
         flex-direction: column;
+        @media screen and (min-width:992px){
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
     }
     &--plats{
         height: 350px;
         display: flex;
         flex-direction: column;
+        @media screen and (min-width:992px){
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
     }
     &--desserts{
         height: 350px;
         display: flex;
         flex-direction: column;
+        @media screen and (min-width:992px){
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
     }
 }
 
 .menu__paragraph{
     width: 100%;
     padding-bottom: 5px;
-    & >p {
+    &-style {
         font-size: 18px;
         font-family: $font-text;
         border-bottom: 3px solid $color-terciary;
@@ -69,17 +81,38 @@
 }
 
 .container__menu{
+    display: flex;
     width: 100%;
     height: 80px;
     border-radius: 25px;
     background-color: $color-base;
+    overflow: hidden;
+    cursor: pointer;
     & >h4{
         width: 95%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    &:hover .menu_check{
+        width: 20%;
+        transition: all 4s ;
+        background-color: $color-terciary;
+    }
+    &:hover i {
+        visibility: visible;
+        transition: 1s;
+        transform:rotate(360deg);
+      }
+    @media screen and (min-width:992px){
+        width: 40%;
+        margin-left: 0;
     }
 }
 
 .description__title{
     margin: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .description__prix{
@@ -90,14 +123,31 @@
 
 .description{
     margin-left: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .prix{
     margin-right: 0;
 }
 
+.menu_description{
+    width: 100%;
+    &:hover{
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
 .menu_check{
+    margin-right: 0;
+    margin-left: 0;
+    height: 100%;
+    display: flex;
     & > i {
         visibility: hidden;
+        color: $color-terciary;
+        background-color: $color-base;
+        border-radius: 50%;
     }
 }

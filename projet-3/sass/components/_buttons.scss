@@ -5,8 +5,13 @@
     border-radius: 50px;
     border: none;
     box-shadow: 3px 3px 3px 1px lightgray;
-    background: linear-gradient($color-secondary,$color-primary);
+    background: $gradient-btn;
     color: $color-base;
+    cursor: pointer;
+    &:hover{
+        box-shadow: 2px 3px 10px rgb(0 0 0 / 35%);
+        transform: scale(1.03);
+    }
 }
 
 .btn{
@@ -17,9 +22,12 @@
     box-shadow: 3px 3px 3px 1px lightgray;
     display: flex;
     flex-direction: row;
+    background-color: $color-gray;
+    cursor: pointer;
     &:hover{
         box-shadow: 2px 3px 10px rgb(0 0 0 / 35%);
         transform: scale(1.03);
+        background-color: lighten($color-gray, 2%);
     }
     @media screen and (min-width: 992px){
         width: 250px;
