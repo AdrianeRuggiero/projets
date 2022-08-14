@@ -77,6 +77,8 @@
         font-size: 18px;
         font-family: $font-text;
         border-bottom: 3px solid $color-terciary;
+        width: fit-content;
+        margin-left: 0;
     }
 }
 
@@ -95,7 +97,7 @@
     }
     &:hover .menu_check{
         width: 20%;
-        transition: all 4s ;
+        transition: all 2s;
         background-color: $color-terciary;
     }
     &:hover i {

@@ -24,16 +24,28 @@
         height: 22%;
         border-radius: 25px;
         background-color: $color-base;
+        & > a{
+            height: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            & >i {
+                visibility: hidden;
+            }
+            &:hover >i {
+                visibility: visible;
+            }
+        }
         &-image{
-                & >img{
-                    border-radius: 25px 25px 0 0;
-                    width: 100%;
-                    height: 170px;
-                }
+            width: 100%;
+            margin-top: 0;
+            & >img{
+                border-radius: 25px 25px 0 0;
+                width: 100%;
+                height: 170px;
+            }
         }
         &-description{
-            display: flex;
-            flex-direction: row;
+            width: 90%;
         }
         @media screen and (min-width: 992px) {
         width: 35%;
@@ -48,5 +60,5 @@
 }
 
 .restaurant-text{
-    width: 80%;
+    width: 95%;
 }
