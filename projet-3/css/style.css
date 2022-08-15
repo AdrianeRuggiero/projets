@@ -302,12 +302,6 @@ a {
   display: flex;
   flex-wrap: wrap;
 }
-.restaurants__box > a > i {
-  visibility: hidden;
-}
-.restaurants__box > a:hover > i {
-  visibility: visible;
-}
 .restaurants__box-image {
   width: 100%;
   margin-top: 0;
@@ -318,7 +312,7 @@ a {
   height: 170px;
 }
 .restaurants__box-description {
-  width: 90%;
+  width: 80%;
 }
 @media screen and (min-width: 992px) {
   .restaurants__box {
@@ -334,6 +328,66 @@ a {
 
 .restaurant-text {
   width: 95%;
+}
+
+.restaurant__btn {
+  height: 2rem;
+  width: 2rem;
+  background-color: transparent;
+  border: solid 0px transparent;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+  background-color: black;
+}
+.restaurant__btn:hover::before {
+  opacity: 1;
+}
+.restaurant__btn::before {
+  opacity: 0;
+  transition: 0.3s;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
+}
+.restaurant__like {
+  transition-duration: 0.25s;
+  background-color: #f6f6f6;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  mix-blend-mode: lighten;
+  border: solid 0px transparent;
+}
+.restaurant__btn:hover .restaurant__like--noBground {
+  opacity: 0;
+}
+
+.box__btn {
+  height: 2rem;
+  width: 2rem;
+  background-color: transparent;
+  border: solid 0px transparent;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 0;
+}
+.box__like {
+  background-color: white;
 }
 
 .menu__main {
