@@ -514,12 +514,13 @@ a {
 }
 .container__menu:hover .menu_check {
   width: 20%;
-  transition: all 2s;
+  -webkit-animation: check-animation 0.5s ease-in-out;
+          animation: check-animation 0.5s ease-in-out;
   background-color: #99E2D0;
 }
 .container__menu:hover i {
   visibility: visible;
-  transition: 1s;
+  transition: 0.75s;
   transform: rotate(360deg);
 }
 @media screen and (min-width: 992px) {
@@ -693,5 +694,29 @@ a {
   33% {
     transform: scale(1);
     opacity: 1;
+  }
+}
+
+/* Checked Menu */
+@-webkit-keyframes check-animation {
+  0% {
+    width: 0%;
+  }
+  16% {
+    width: 5%;
+  }
+  33% {
+    width: 20%;
+  }
+}
+@keyframes check-animation {
+  0% {
+    width: 0%;
+  }
+  16% {
+    width: 5%;
+  }
+  33% {
+    width: 20%;
   }
 }

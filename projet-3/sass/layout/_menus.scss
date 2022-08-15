@@ -107,12 +107,12 @@
     }
     &:hover .menu_check{
         width: 20%;
-        transition: all 2s;
+        animation: check-animation 0.5s ease-in-out;
         background-color: $color-terciary;
     }
     &:hover i {
         visibility: visible;
-        transition: 1s;
+        transition: 0.75s;
         transform:rotate(360deg);
       }
     @media screen and (min-width:992px){
