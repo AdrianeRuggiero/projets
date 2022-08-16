@@ -8,6 +8,7 @@
     bottom:0;
     background-color: $color-base;
     animation: apparition 0.2s 3s ease-in-out forwards;
+    z-index: 99999999999;
     &__inner{
         position: absolute;
         top: 50%;

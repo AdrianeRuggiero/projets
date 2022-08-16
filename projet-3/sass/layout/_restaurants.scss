@@ -24,6 +24,7 @@
         height: 22%;
         border-radius: 25px;
         background-color: $color-base;
+        position: relative;
         & > a{
             height: 100%;
             display: flex;
@@ -36,6 +37,15 @@
                 border-radius: 25px 25px 0 0;
                 width: 100%;
                 height: 170px;
+            }
+            & >span{
+                background-color: $color-terciary;
+                color: darken($color-terciary, 50%);
+                padding: 0.5rem;
+                border-radius: 0.125rem;
+                position: absolute;
+                top: 1rem;
+                right: 0.75rem;
             }
         }
         &-description{
@@ -53,76 +63,23 @@
     }
 }
 
+
+
 .restaurant-text{
     width: 95%;
 }
 
-.restaurant{
-    &__btn {
-    height: 2rem;
-    width: 2rem;
-    background-color: transparent;
-    border: solid 0px transparent;
-    padding: 0;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    cursor: pointer;
-    position: relative;
-    background-color: black;       
-        &:hover::before {
-            opacity: 1;
-        }
-        &::before {
-            opacity: 0;
-            transition: 0.3s;
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            height: 100%;
-            width: 100%;
-            background:linear-gradient(0deg, $color-primary 0%,$color-secondary 100%);
-        }
-    }
-    &__like {
-        transition-duration: .25s;
-        background-color: #f6f6f6;
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        display:flex;
-        align-items:center;
-        justify-content:center;
-        mix-blend-mode: lighten;
-        border: solid 0px transparent;
-    }
-        
-    &__btn:hover {
-        .restaurant__like {
-            &--noBground {
-                opacity: 0;
-            }
-        }
-    }
-}
 
-.box{
-    &__btn {
-        height: 2rem;
-        width: 2rem;
-        background-color: transparent;
-        border: solid 0px transparent;
-        padding: 0;
-        display:flex;
-        align-items:center;
-        justify-content:center;
-        margin-left: 0;
-    }
-    &__like {
-        background-color: white;
-    }
+.restaurant{
+    &__btn >i {
+        cursor: pointer;
+        font-weight: 100;
+        &:hover:before{
+            transition: all .8s ease-in-out;
+            background-clip: text;
+            font-weight: 900;
+            background-image: $gradient-btn;
+            -webkit-text-fill-color: transparent;
+        }
+    }   
 }
-        
