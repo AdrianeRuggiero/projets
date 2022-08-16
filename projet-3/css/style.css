@@ -252,6 +252,7 @@ a {
 }
 .fonctionnement__btn {
   width: 100%;
+  height: 100px;
   display: flex;
   flex-direction: column;
   cursor: pointer;
@@ -514,8 +515,8 @@ a {
 }
 .container__menu:hover .menu_check {
   width: 20%;
-  -webkit-animation: check-animation 0.5s ease-in-out;
-          animation: check-animation 0.5s ease-in-out;
+  -webkit-animation: check-animation 1s ease-in-out;
+          animation: check-animation 1s ease-in-out;
   background-color: #99E2D0;
 }
 .container__menu:hover i {
@@ -702,10 +703,7 @@ a {
   0% {
     width: 0%;
   }
-  16% {
-    width: 5%;
-  }
-  33% {
+  100% {
     width: 20%;
   }
 }
@@ -713,10 +711,7 @@ a {
   0% {
     width: 0%;
   }
-  16% {
-    width: 5%;
-  }
-  33% {
+  100% {
     width: 20%;
   }
 }

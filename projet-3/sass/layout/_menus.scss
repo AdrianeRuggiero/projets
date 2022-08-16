@@ -107,7 +107,7 @@
     }
     &:hover .menu_check{
         width: 20%;
-        animation: check-animation 0.5s ease-in-out;
+        animation: check-animation 1s ease-in-out;
         background-color: $color-terciary;
     }
     &:hover i {
