@@ -12,7 +12,7 @@
         }
     }
     &-logo{
-        margin: 0;
+        margin: 10px;
     }
     @media screen and (min-width: 768px){
         height: 100px;
@@ -22,6 +22,9 @@
 .text-footer{
     font-family: $font-text;
     margin-left: 0;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     color: $color-base;
+    & >i {
+        margin-right: 10px;
+    }
 }

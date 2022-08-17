@@ -2,25 +2,60 @@
     height: 350px;
     display: flex;
     flex-direction: column;
+    @media screen and (min-width: 992px){
+        height: 200px;
+        flex-direction: row;
+        width: 100%;
+    }
     &__title{
-        width: 90%;
+        width: 95%;
         @media screen and (min-width:992px){
             margin-left: 10px;
-            width: 30%;
+            width: 15%;
         }
     }
-    &__btn{
-        width: 100%;
-        height: 100px;
-        display: flex;
-        flex-direction: column;
-        cursor: pointer;
-    }
-    @media screen and (min-width: 992px){
-            height: 200px;
-            flex-direction: row;
-            width: 100%;
+    &__list{
+        width: 80%;
+        list-style: none;
+        counter-reset: styleListe;
+        @media (min-width:992px) {
+            display: flex;
             justify-content: space-between;
+          }
+        &-tag {
+            height: 80px;
+            margin: 20px;
+            box-shadow: 3px 3px 3px 1px lightgray;
+            border-radius: 25px;
+            background-color: #f6f6f6;
+            display: flex;
+            position: relative;
+            &::before {
+                counter-increment: styleListe 1;
+                content: counter(styleListe) " ";
+                background: $color-primary;
+                height: 20px;
+                width: 20px;
+                border-radius: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: $color-base;
+                position: absolute;
+                left: -10px;
+                margin-top: 30px;
+            }
+            @media screen and (min-width: 992px){
+                width: 350px;
+            }
+        }
     }
-    
+}
+
+.tag-icon{
+    margin-right: 25px;
+}
+
+.tag-title{
+    margin-left: 0;
 }

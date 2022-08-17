@@ -51,6 +51,17 @@
         &-description{
             width: 80%;
         }
+        &-icon > i {
+            cursor: pointer;
+            font-weight: 100;
+            &:hover:before{
+                transition: all .8s ease-in-out;
+                background-clip: text;
+                font-weight: 900;
+                background-image: $gradient-btn;
+                -webkit-text-fill-color: transparent;
+            }
+        }   
         @media screen and (min-width: 992px) {
         width: 35%;
         height: 40%;
@@ -59,27 +70,12 @@
         }
         &:hover{
             transform: scale(1.03);
+            box-shadow: 3px 3px 3px 1px lightgray;
         }
     }
 }
 
 
-
 .restaurant-text{
     width: 95%;
-}
-
-
-.restaurant{
-    &__btn >i {
-        cursor: pointer;
-        font-weight: 100;
-        &:hover:before{
-            transition: all .8s ease-in-out;
-            background-clip: text;
-            font-weight: 900;
-            background-image: $gradient-btn;
-            -webkit-text-fill-color: transparent;
-        }
-    }   
 }
