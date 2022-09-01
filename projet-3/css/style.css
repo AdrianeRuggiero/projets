@@ -91,13 +91,14 @@ a {
   border-radius: 50px;
   border: none;
   box-shadow: 3px 3px 3px 1px lightgray;
-  background: linear-gradient(#FF79DA, #9356DC);
+  background: linear-gradient(#FF79DA, #9256dc);
   color: white;
   cursor: pointer;
 }
 .btn-colored:hover {
   box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.35);
   transform: scale(1.03);
+  background: linear-gradient(#f987d9, #9661d7);
 }
 
 .preloader {
@@ -143,7 +144,7 @@ a {
 }
 
 .preloader__balls > div:nth-child(3) {
-  background-color: #9356DC;
+  background-color: #9256dc;
   -webkit-animation-duration: 0.75s;
           animation-duration: 0.75s;
   -webkit-animation-delay: 0.24s;
@@ -250,7 +251,7 @@ a {
 .fonctionnement__list-tag::before {
   counter-increment: styleListe 1;
   content: counter(styleListe) " ";
-  background: #9356DC;
+  background: #9256dc;
   height: 20px;
   width: 20px;
   border-radius: 100%;
@@ -340,11 +341,11 @@ a {
   font-weight: 100;
 }
 .restaurants__box-icon > i:hover:before {
-  transition: all 0.8s ease-in-out;
+  transition: all 0.5s ease-in-out;
   -webkit-background-clip: text;
           background-clip: text;
   font-weight: 900;
-  background-image: linear-gradient(#FF79DA, #9356DC);
+  background-image: linear-gradient(#FF79DA, #9256dc);
   -webkit-text-fill-color: transparent;
 }
 @media screen and (min-width: 992px) {
